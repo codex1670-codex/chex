@@ -1,5 +1,27 @@
 node_modules
 **/node_modules
+
 frontend/dist
-backend/nexa.db*
+**/dist
+
 .git
+**/.git
+
+# Environment files and secrets
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Local databases and SQLite sidecar files
+backend/nexa.db*
+**/*.db
+**/*.db-*
+**/*.sqlite
+**/*.sqlite3
+
+# Backups and user-uploaded media
+backup/
+**/backup/
+backend/uploads/
+**/uploads/
