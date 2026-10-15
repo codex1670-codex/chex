@@ -2,7 +2,7 @@
 FROM node:20-bookworm-slim AS web
 WORKDIR /app/frontend
 COPY frontend/package*.json ./
-RUN npm ci
+RUN npm install --include=optional
 COPY frontend/ ./
 RUN npm run build
 
