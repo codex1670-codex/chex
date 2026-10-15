@@ -1,0 +1,12 @@
+{
+  "name": "nexa",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "dev:backend": "npm --prefix backend start",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "start": "npm run build && NODE_ENV=production npm --prefix backend start",
+    "test": "npm --prefix backend test"
+  }
+}
